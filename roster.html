@@ -1,0 +1,246 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Test space for javascript learning">
+    <meta name="author" content="Holden McGinnis">
+    <!--<link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Commit Analytics - Roster</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="css/roster.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif] -->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" id ="NavBarName"> <img src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk16wj_K6XwKn5Zlq-jtTVMQ9QDlZSWd9LcQVUXnSVPYyIj-DL2g" height = 40px width = 40px></a>
+        </div>  
+        
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav left-nav">
+            <li><a href="#dashboard"> DASHBOARD</a></li>
+            <li><a href="#practices">PRACTICES</a></li>
+            <li><a href="#meets">MEETS</a></li>
+            <li class="active"><a href="#roster">ROSTER</a></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li id = "user-name"><a href="#user"> Daniel Dingman</a></li>
+            <li id="user-image" class="circular"><a href="#user"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2N0w5GLuv2144YbyankqFboBrLd7ZJ90GQubwkDLiiQPDCtOeCA" height = 40px width = 40px></a></li>
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+        
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3">
+          
+            <button id="team-selector" class="btn btn-default dropdown-toggle" type="button">Northpenn Men 2015 <span class="caret"></span>
+           </button>
+          
+        </div>
+        
+        <div class="col-xs-6">
+          <!-- Empty div for spacing-->  
+        </div>
+        
+        <!-- New team button-->
+        <div class="col-xs-3">
+          <button id="new-team-btn" class="btn btn-default pull-right" type = "button"> + New Team
+            
+          </button>  
+        </div>  
+      </div>
+    
+     <div class="row">
+       <div class="col-xs-3">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <div class="btn-group" role="group">
+               <button class="btn btn-default disable">Groups</button>
+               <button id="function-btn" class="btn btn-default pull-right">+ New Group</button>
+             </div>
+           </div>
+           <div class="panel-body">
+             <ul class="list-group">
+               <li class="list-group-item">All - Full Roster</li>
+               <li class="list-group-item">Distance</li>
+               <li class="list-group-item">Middle</li>
+               <li class="list-group-item">Sprint</li>
+               <li class="list-group-item">Distance (Advanced)</li>
+               <li class="list-group-item">Slowest Swimmers</li>
+               <li class="list-group-item">Fastest Swimmers</li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <div class="col-xs-3">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <div class="btn-group" role="group">
+               <button class="btn btn-default">Swimmers</button>
+               <button id="function-btn" class="btn btn-default pull-right">+ New Swimmer</button>
+             </div>
+           </div>
+           <div class="panel-body">
+             <ul class="list-group">
+               <li class="list-group-item"><img src="http://www.nathan-adrian-online.com/uploads/1/3/6/7/13672260/129587_orig.jpg" height="40px" width="40px" class="img-circle">Nathan Adrian</li>
+               <li class="list-group-item"> <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Randall_Bal%2C_Vienna2008.jpg/220px-Randall_Bal%2C_Vienna2008.jpg" height="40px" width="40px" class="img-circle swimmer-imgage">Randall Bal</li>
+               <li class="list-group-item"><img src="http://newsimg.bbc.co.uk/media/images/42768000/jpg/_42768977_berkoff203.jpg" class="img-circle swimmer-image">David Berkoff</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Connor Black</li>
+               <li class="list-group-item"><img src="http://www.annarbor.com/assets_c/2012/07/Clary_Olympics_Butterfly-thumb-590x410-118481.jpg" class="img-circle swimmer-image">Tyler Clary</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Patrick Conaton</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Tom Dolan</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Conor Dwyer</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Anthony Ervin</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Mark Ganglof</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Steve Gentner</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Hunter Gobleich</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Charlie Houchin</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Tom Jager</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Larsen Jensen</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Jason Lezak</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Tyler McGill</li>
+               <li class="list-group-item"><img src="http://www.d120.org/assets%5C1%5Cnews%5CConnor_Black_2.jpg" class="img-circle swimmer-image">Matt McLean</li>
+             </ul>
+           </div>
+         </div>
+             
+       </div>
+       <div class="col-xs-6">  
+         <div id="info-panel" class="panel panel-default">
+           <div class="panel-heading">
+             <div class="btn-group" role="group">
+               <button id="personal-info-btn" class="btn btn-default active-info-btn">
+               PERSONAL INFORMATION
+               </button>
+               <button id="statistics-btn" class="btn btn-default">
+                 STATISTICS
+               </button>
+             </div>
+             
+             <button id="function-btn" class="btn btn-default pull-right">
+               <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+               Edit
+             </button>
+           </div>
+         
+           <div class="panel-body">
+             <div class = "personal-info-section">
+               <div class="row">
+                 <div id="personal-info-image" class="col-xs-1 circular">
+                   <img  src="http://www.nathan-adrian-online.com/uploads/1/3/6/7/13672260/129587_orig.jpg" height=40px width=40px>
+                 </div>
+                 <div id="personal-info-name"class="col-xs-3">          
+                   Nathan Adrian
+                 </div>
+                 <div id="personal-info-phone-number" class="col-xs-4">         
+                   <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                   (610) 716 - 9536
+                 </div>
+                 <div id="personal-info-email"class="col-xs-4">
+                   <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                   anthonyervin@gmail.com
+                 </div>
+               </div>     
+             </div>  
+             <div class = "personal-info-section">
+               <div class="row">
+                 <div id="personal-info-gender" class="col-xs-5">
+                   Gender: Male
+                 </div>
+                 <div id="personal-info-height" class="col-xs-5">
+                   Height: 6 ft 3 in
+                 </div>
+               </div>
+               <div class="row">
+                 <div id="personal-info-age" class="col-xs-5">
+                   Age: 33
+                 </div>
+                 <div id="personal-info-weight" class="col-xs-5">
+                   Weight: 160 lbs
+                 </div>
+               </div>
+             </div>  
+             <div class = "personal-info-section">
+             Notes
+             </div>  
+             
+           </div>
+           
+      
+           
+         </div>
+       </div>
+    </div>
+    
+     
+      
+      <!--<div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+-->
+   </div><!-- /.container -->
+
+   <script type="text/javascript" >
+     $(".nav a").on("click", function() {
+        $(".nav").find(".active").removeClass("active");
+
+        //Sets active underline to the user name when you click on the image
+        if ($(this).parent().attr('id') == "user-image") {
+          $(".nav").find("#user-name").addClass("active");
+        } else {
+          $(this).parent().addClass("active");
+        }
+      });
+
+    $("#info-panel .btn-group button").on("click", function() {
+      $("#info-panel .btn-group").find(".active-info-btn").removeClass("active-info-btn");
+      $(this).addClass("active-info-btn");
+    });
+   </script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>
+
